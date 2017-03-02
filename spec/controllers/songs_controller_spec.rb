@@ -43,6 +43,7 @@ RSpec.describe SongsController, type: :controller do
     before { post(:create, { song: valid_attributes }) }
 
     it "creates a new Song" do
+      # binding.pry
       expect(Song.count).to eq(1)
     end
 
